@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mohitmauryadev.github.io/Pavan_Portfolio",
+  "homepage": "https://github.com/mohitmauryadev/P_Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
