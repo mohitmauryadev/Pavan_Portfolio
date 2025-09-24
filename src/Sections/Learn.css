@@ -1,0 +1,67 @@
+.Learncard {
+  position: relative;
+  top: 0px;
+  width: 90%;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 15px 25px rgba(255, 251, 0, 0.3);
+  transition: transform 0.15s ease;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  border: 1px solid rgba(248, 236, 0, 0.3);
+  /* background: #18363A; */
+  background: #efefef;
+  color: rgb(0, 0, 0);
+}
+
+/* Gradient spotlight */
+.Learncard::before {
+  content: '';
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  width: var(--width, 0);
+  height: var(--height, 0);
+  background: radial-gradient(ellipse closest-side, rgba(251, 247, 0, 0.3), transparent);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.Learncard:hover::before {
+  --width: 300px;
+  --height: 200px;
+}
+
+
+
+.skillCards {
+  background: #ffffff;
+  padding: 15px;
+}
+
+.skillCards:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 7px #edfdff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skilltopH{
+  color: #121718;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.Htext{
+  color: #15272b;
+}
+
+.Ptext {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  color: #0c1a1cc6;
+}
+

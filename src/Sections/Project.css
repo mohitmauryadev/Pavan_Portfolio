@@ -1,0 +1,97 @@
+.Project {
+    position: relative;
+    width: 90%;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 15px 25px rgba(255, 123, 0, 0.3);
+    transition: transform 0.15s ease;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    border: 1px solid rgba(255, 123, 0, 0.3);
+    background: #102b30;
+    color: rgb(0, 0, 0);
+}
+
+/* Gradient spotlight */
+.Project::before {
+    content: '';
+    position: absolute;
+    left: var(--x, 50%);
+    top: var(--y, 50%);
+    width: var(--width, 0);
+    height: var(--height, 0);
+    background: radial-gradient(ellipse closest-side, rgba(255, 123, 0, 0.3), transparent);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+.Project:hover::before {
+    --width: 300px;
+    --height: 200px;
+}
+
+.ProjectCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    gap: 35px;
+}
+
+.topH{
+     font-weight: bold;
+      color: #CAF0F8;
+      font-size:xx-large;
+      /* margin-bottom: 40px; */
+}
+
+.proj {
+    background-color: #18363A;
+}
+
+.proj:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 7px #356b72;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ProjectH {
+    font-weight: bold;
+    color: #CAF0F8;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ProjectP {
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    color: #caf0f8c6;
+}
+
+.linkbtn:hover{
+        color: rgb(14, 97, 14);
+}
+
+/* @media screen and (max-width:950px) {
+    .WebCard{
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+}
+.containttext{
+    width: 85%;
+}
+   .Webimg{
+    width: 85%;
+   } 
+} */

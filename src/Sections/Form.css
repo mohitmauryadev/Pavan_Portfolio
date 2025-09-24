@@ -1,0 +1,24 @@
+.formSection{
+    border: 1px solid #49686d;
+    box-shadow: 0 15px 25px #49686d;
+    background-color: #0D1F22;
+}
+
+.formH{
+     /* font-weight: bold; */
+      color: #262727;
+      opacity: 0.8;
+      /* font-size:xx-large; */
+}
+
+input, textarea{
+    /* font-weight: bold; */
+    color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.textp{
+    color: rgba(0, 0, 0, 0.67);
+    opacity: 0.9;
+}

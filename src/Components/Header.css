@@ -1,0 +1,71 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #2e4549;
+    box-shadow: 0px 0px 7px #1f3135;
+    align-items: center;
+    height: 70px;
+}
+
+
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.NavBar button{
+    color: #336068;
+}
+
+.NavBar button:hover{
+    color: #558f99;
+    text-decoration: underline;
+}
+
+.HeadNav {
+    display: flex;
+    position: absolute;
+    top: auto;
+    right: 30px;
+    /* border: none; */
+}
+
+@media screen and (max-width:710px) {
+
+
+    .NavBar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .HeadNav {
+        display: none;
+        z-index: 50;
+        width: 300px;
+        height: 100vh;
+        padding: 30px;
+        position: absolute;
+        top: 70px;
+        right: 0px;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+
+.HeadNav.hidden {
+    display: block;
+    background-color: #ffffff;
+    /* border-left: 1px solid black; */
+
+}

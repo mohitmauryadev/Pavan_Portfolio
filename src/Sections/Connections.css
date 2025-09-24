@@ -1,0 +1,25 @@
+.conSec{
+    background-color: #efefef;
+}
+
+.connCard{
+    margin: 25px;
+    background-color: #ffffff;
+
+}
+
+.connCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 7px #356b72;
+    transition: transform 0.3s ease-in-out;
+}
+
+.CardH{
+    font-size:larger;
+    font-weight: bold;
+    color: #0f1a1d;
+}
+
+p{
+    color: #132126;
+}
